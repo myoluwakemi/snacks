@@ -4,6 +4,7 @@ import './Gallery.css'
 import FilteredBtn from "./FilteredBtn";
 import SearchForm from "./SearchForm";
 import Card from "./Card"
+import Conditional from "./Conditional";
 
 class Gallery extends Component {
   constructor() {
@@ -52,9 +53,11 @@ class Gallery extends Component {
         <FilteredBtn filterClick={this.onFilterItems}/>
         <SearchForm searchChange={this.onSearchChange}/>
         <div className="storeItems">
+          <Conditional>
           <div className="row">
           {snacks}
           </div>
+          </Conditional>
         </div>
 
       </div>
