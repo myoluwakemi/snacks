@@ -5,11 +5,14 @@ import MobileWebNav from './MobileWebNav';
 const StyledBurger = styled.div`
     width: 2rem;
     height:2rem;
-    position:relative;
+    position: fixed;
+    top: 60px;
+    right: 20px;
     display:flex;
     justify-content: space-around;
     flex-flow: column nowrap;
     z-index:30;
+
 
     @media(min-width: 760px){
         display:none;

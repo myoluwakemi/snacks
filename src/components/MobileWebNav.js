@@ -22,7 +22,8 @@ li a:hover{
     
     flex-flow:column nowrap;
     background-color:  #f4f4f4;;
-    position:absolute;
+    position:fixed;
+    
     transform: ${({open}) => open ? "translateX(0)": "translate(100%)"};
     top:40px;
     right: 0;
