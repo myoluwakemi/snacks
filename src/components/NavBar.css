@@ -1,0 +1,20 @@
+.cart_item {
+    display: none;
+  }
+.cart_item a {
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: .5rem .3rem;
+    transition: all 0.4s ease;
+  
+  }
+.cart_item a:hover {
+    background: palevioletred;
+    color: white;
+  }
+  @media (min-width: 760px) {
+     .cart_item {
+      display: flex;
+    }
+  }

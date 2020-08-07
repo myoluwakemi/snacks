@@ -1,0 +1,108 @@
+.store {
+    background-color: #f4f4f4;
+    padding: 2rem;
+  }
+  .store h1 {
+    text-align: center;
+  }
+  .store h1 span {
+    color: palevioletred;
+    font-size: 3rem;
+  }
+  .categorybtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  .categorybtn .btnn {
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    margin: 0rem 0.3rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  .categorybtn .btnn:hover {
+    background: black;
+    color: palevioletred;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+  }
+  .searchbtn {
+    background-color: palevioletred;
+    outline: none;
+    border: none;
+    text-align: center;
+  }
+  input[type="text"] {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0.5rem 0.2rem;
+    outline: none;
+  }
+  .storeItems .row {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .storeItems .row > div {
+    width: 100%;
+  }
+  
+  .storeItems .card {
+    min-width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0.7rem 0rem;
+  }
+  
+  .storeItems .imgHolder {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .storeItems img {
+    width: 100%;
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+  }
+  .storeItems img:hover {
+    transform: scale(1.2);
+  }
+  .storeItems .imgHolder .cart-overlay {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    background-color: palevioletred;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+  .storeItems .imgHolder .cart-overlay:hover {
+    opacity: 1;
+  }
+  .price {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-style: italic;
+  }
+  @media (min-width: 560px) {
+    .storeItems .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+  }
+  @media (min-width: 760px) {
+    .storeItems .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+  }
