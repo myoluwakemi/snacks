@@ -8,6 +8,13 @@ body{
   padding: 0;
   font-family: cursive, fantasy;
 }
+.pad{
+  padding-left: 2rem ;
+  padding-right: 2rem;
+}.pad{
+  padding-left: 5rem ;
+  padding-right: 5rem;
+}
 @media(min-width: 760px){
   .pad{
     padding-left: 5rem ;

@@ -1,0 +1,39 @@
+.name_input, .email_input{
+    width: 100%;
+    padding: 1rem 3rem;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font: inherit;
+    background-color: rgba(128, 128, 128, 0.103);
+    outline: none;
+}
+.textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(128, 128, 128, 0.103);
+    border-radius: 10px;
+    font-size: 16px;
+    font: inherit;
+    resize: none;
+    outline:none ;
+  }
+  .formbtn{
+      margin-top: 1rem;
+      border-radius: 20px;
+      border: none;
+      background: palevioletred;
+      font-size: 0.8rem;
+      padding: 0.8rem 4rem;
+      cursor: pointer;
+      outline: none;
+  }
+

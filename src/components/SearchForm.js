@@ -10,6 +10,7 @@ function SearchForm({searchChange}){
             <FontAwesomeIcon icon={faSearch} />
           </button>
           <input 
+          className="searchtext"
           type="text" 
           id="text" 
           placeholder="item.." 

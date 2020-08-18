@@ -52,6 +52,9 @@ function MobileWebNav( {open}){
       <li>
         <a href="#gallery">Store</a>
       </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
       </UL>
     )
 }

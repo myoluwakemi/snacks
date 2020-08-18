@@ -5,7 +5,7 @@ import styles from './Footer.module.css'
 
 const Footer = () =>{
     return(
-        <footer>
+        <footer className="pad">
              <div className={styles.moreinfo}>
           <div>
               <h3>follow Us</h3>
