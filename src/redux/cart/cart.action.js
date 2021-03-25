@@ -1,4 +1,4 @@
-import { items } from '../../components/Data'
+
 import {CartActionTypes} from '../cart/cart.type'
 
 export const ToggleCartHidden =()=>({
