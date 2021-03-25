@@ -1,20 +1,23 @@
 import React from 'react';
+import '../components/filteredbtn.css'
+
+import CustomButton from './custom-button/custom-button';
 
 
 
-function FilteredBtn({filterClick}){
+function FilteredBtn({onClickableItem }){
     return(
         <div className="categorybtn">
-            <button className="btnn" onClick={(all)=>filterClick(all)}>All</button>
-        <button className="btnn" onClick={(cake)=>filterClick(cake)}>Cakes</button>
-        <button className="btnn" onClick={(cupcakes)=>filterClick(cupcakes)}>Cupcakes</button>
-        <button className="btnn" onClick={(sweet)=>filterClick(sweet)}>Sweets</button>
-        <button className="btnn" onClick={(doug)=>filterClick(doug)}>Doughnuts</button>
-        <button className="btnn" onClick={(drinks)=>filterClick(drinks)}>Drinks</button> 
-            
+          <CustomButton filteredbtn onClick={onClickableItem }>All</CustomButton>
+          <CustomButton filteredbtn onClick={onClickableItem }>Cakes</CustomButton>
+          <CustomButton filteredbtn onClick={onClickableItem }>Cupcakes</CustomButton>
+          <CustomButton filteredbtn onClick={onClickableItem }>Sweets</CustomButton>
+          <CustomButton filteredbtn onClick={onClickableItem }>Doughnuts</CustomButton>
+          <CustomButton filteredbtn onClick={onClickableItem }>Drinks</CustomButton>
         </div>
 
     )
 
 }
+
 export default FilteredBtn

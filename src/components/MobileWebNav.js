@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 
 const UL = styled.ul`
@@ -44,16 +45,16 @@ function MobileWebNav( {open}){
     return(
         <UL open={open}>
         <li>
-        <a href="index.html">Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li>
         <a href="#about">About</a>
       </li>
       <li>
-        <a href="#gallery">Store</a>
+        <Link to='/gallery'>Gallery</Link>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <Link to='/contact'>Contact</Link>
       </li>
       </UL>
     )

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 
 import styles from'./contactForm.module.css'
+import CustomButton from "./custom-button/custom-button";
 
 class ContactForm extends Component {
   constructor() {
@@ -57,7 +58,7 @@ class ContactForm extends Component {
            placeholder="message.."
            required
             />
-            <button type="submit" className={`${styles.formbtn} btn `}> Submit</button>
+            <CustomButton>Submit</CustomButton>
         </div>
       </form>
     );

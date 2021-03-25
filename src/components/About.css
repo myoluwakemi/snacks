@@ -12,29 +12,21 @@
   .about > div {
     padding: 2rem;
     margin-bottom: 2rem;
-    width: 80%;
-    text-align: start;
+    width: 100%;
+   ;
+    
   }
-  .btn {
-    color: black;
-    border: 2px solid black;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: all 0.4s ease;
-    font-size: 1.2rem;
-  }
-  .btn:hover {
-    background: #cccccc56;
-    color: white;
-  }
+  
   .about > div img {
     width: 100%;
     border: 8px solid palevioletred;
     transition: all 0.4s ease-in-out;
+  
   }
   .about > div img:hover {
     transform: scale(1.1);
   }
+  
   @media (min-width: 760px) {
     .about {
         flex-direction: row;

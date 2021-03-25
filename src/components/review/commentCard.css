@@ -1,0 +1,40 @@
+.comment-card{
+    min-width: 240px;
+    
+  border-radius: 5px;
+  padding: 1.5rem;
+  display: flex;
+  margin: 0.7rem 0rem;
+  background-color: white;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.082), -3px 3px 3px 2px rgba(0, 0, 0, 0.082);
+
+}
+
+.customer-comment{
+    width: 60%;
+    text-align: start;
+    margin-right: .5rem;
+}
+.customer-name{
+    font-weight: bold;
+    
+}
+.customerImg{
+    height: 100px;
+    width: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.customerImg img{
+    width: 100%;
+    border-radius: 50%;
+}
+@media(min-width: 650px){
+    .comment-card{
+        max-width: 300px;
+        margin-bottom: 1.5rem;
+    }
+}

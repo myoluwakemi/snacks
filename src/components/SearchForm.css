@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    justify-content: center;
+  }
+  .searchbtn {
+    background-color: palevioletred;
+    outline: none;
+    border: none;
+    text-align: center;
+  }
+  .searchtext {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0.5rem 0.2rem;
+    outline: none;
+  }

@@ -1,12 +1,13 @@
 import React from 'react';
+import {connect} from 'react-redux'
 import Logo from '../assests/logo.svg'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import Burger from './Burger'
-import styled from 'styled-components';
-import './NavBar.css'
 
-    const Nav = styled.nav`
+import './NavBar.css'
+import CartIcon from './cart/cart-icon/cart-icon';
+import { Link } from 'react-router-dom';
+import CartDropDown from './cart/cart-dropDown/cart-dropDown';
+
+    /*const Nav = styled.nav`
         
         border-bottom: 2px solid #f1f1f1;
         padding: 0 2rem;
@@ -27,26 +28,44 @@ import './NavBar.css'
               padding-right: 10rem;
             
           }
-    `;
+    `;*/
     
 
 
-const  NavBar=() =>{
+const  NavBar=({hidden}) =>{
     return(
-        <Nav>
+        <div>
+            <div  className="nav ">
         <div className="logoDiv ">
             <img src={Logo} alt="logo"/>
         </div>
-
-        <Burger/>
-
-        <div className="cart_item">
-            <a href="#gallery"><FontAwesomeIcon icon={faShoppingCart}/>  5items-$20</a>
-
+        <div className="menu-Nav">
+            <Link className="menulist" to='/'>
+                HOME
+            </Link>
+            <Link  className="menulist" to='/gallery'>
+                GALLERY
+            </Link>
+            <Link className="menulist" to='/register'>
+                REGISTER
+            </Link>
         </div>
-        </Nav>
+
+       
+        <CartIcon/>
+        </div>
+        {hidden? null :<CartDropDown/>}
+        
+        </div>
 
 
     )
 }
-export default NavBar
+
+
+const mapStateToProps= ({cart: {hidden}})=>({
+    hidden
+
+})
+
+export default connect(mapStateToProps)(NavBar)

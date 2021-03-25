@@ -2,6 +2,7 @@ import React from 'react'
 import MakeCakes from '../assests/makeCakes.jpg'
 import Particles from    "react-particles-js"
 import './About.css'
+import CustomButton from './custom-button/custom-button'
 
 
 function About(){
@@ -76,7 +77,7 @@ function About(){
             sint eaque. Asperiores deserunt perferendis facilis optio hic,
             voluptatibus laboriosam totam illum.
           </p>
-          <a href="index.html" className="btn">Explore</a>
+          <CustomButton>Explore</CustomButton>
         </div>
         <div className= "aboutImg">
           <img src={MakeCakes} alt="" />

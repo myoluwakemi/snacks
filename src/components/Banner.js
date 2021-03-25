@@ -1,5 +1,6 @@
 import React from 'react';
 import './Banner.css'
+import CustomButton from './custom-button/custom-button';
 
 
 function Banner (){
@@ -23,7 +24,7 @@ function Banner (){
         <div className="banner_inner">
         {timeOfDay}
         <h1>Welcome To Our <br /><span>Stomach Delight Gallery</span></h1>
-        <a href="#gallery" className="btn">Explore</a>
+        <CustomButton>Explore</CustomButton>
         </div>
 
 
