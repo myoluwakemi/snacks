@@ -9,10 +9,11 @@
 }
 
 .menu-Nav{
+  width: 30%;
   padding-top: .1rem;
   font-size: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
 }

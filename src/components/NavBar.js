@@ -37,7 +37,10 @@ const  NavBar=({hidden}) =>{
         <div>
             <div  className="nav ">
         <div className="logoDiv ">
-            <img src={Logo} alt="logo"/>
+            <Link to='/'>
+                <img src={Logo} alt="logo"/>
+            </Link>
+
         </div>
         <div className="menu-Nav">
             <Link className="menulist" to='/'>
