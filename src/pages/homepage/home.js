@@ -7,6 +7,8 @@ import Contact from '../../components/contact'
 import '../homepage/home.css'
 import Review from '../../components/review/review';
 
+import Footer from "../../components/Footer";
+
 
 
 
@@ -20,6 +22,7 @@ function Home (){
             </div>
             <Contact/>
             <Review/>
+            <Footer/>
             
             
         </div>

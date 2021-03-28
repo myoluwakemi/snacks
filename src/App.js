@@ -4,7 +4,8 @@ import Spinner from './components/spinner';
 import Header from './components/Header';
 import Home from './pages/homepage/home';
 import Gallery from './pages/gallery/gallery'
-import Footer from './components/Footer'
+import Login from "./pages/login/login";
+
 
 
 
@@ -29,8 +30,8 @@ function App() {
       <Switch>
         <Route exact path ='/' component={Home}/>
         <Route path ='/gallery' component={Gallery}/>
+        <Route path='/register' component={Login}/>
       </Switch>
-      <Footer/>
     </Router>
   </div>
 

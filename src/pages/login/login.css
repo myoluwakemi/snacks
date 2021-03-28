@@ -1,0 +1,117 @@
+.loginBody{
+    width: 100vw;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1468071174046-657d9d351a40?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1932&q=80');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+.loginBody::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background:  rgba(0, 0, 0, 0.76);
+
+}
+
+.cardd {
+    width: 320px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.cardd{
+
+
+    padding: 2rem;
+    margin-top: auto;
+    border-radius: 4px;
+    color:black;
+
+}
+.cardd h1 {
+    border-bottom: 2px solid #ccc;
+    text-align: start;
+    font-size: 3rem;
+    color: white;
+}
+.loginEmail,
+input[type=password],
+input[type=text] {
+    width: 100%;
+    padding: 18px 10px;
+    margin: 8px 0;
+    cursor: pointer;
+    border: 1px solid black;
+    border: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: black;
+}
+.rememberP{
+    display: flex;
+    justify-content: space-between;
+}
+.rememberP label{
+    color: white;
+    font-size: .8rem;
+}
+.forgotPassword{
+    color: white;
+    text-decoration: none;
+    font-size: .8rem;
+
+}
+.submitButton {
+    width: 100%;
+    padding: 18px 10px;
+    font-family: inherit;
+    border: none;
+    margin-top: 1rem;
+    background:  #169d69;;
+    color: black;
+    font-size: 14px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+    outline:none
+}
+input[type=submit]:hover {
+    background: #ccc;
+}
+.actioncall p a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+
+}
+.form-error{
+    color: #F42B4B;
+    text-align: center;
+}
+.redirect{
+    margin-top: 4rem;
+}
+.redirect a{
+    color: #169d69;;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+@media(min-width:780px){
+
+
+    .cardd{
+        left: 80%;
+        color:white;
+
+    }
+
+}
