@@ -8,12 +8,21 @@
     position: relative;
 
 }
+a{
+    color: palevioletred!important;
+    font-size: 1rem !important;
+}
 .loginBody::before{
     content: "";
     position: absolute;
     width: 100vw;
     height: 100vh;
     background:  rgba(0, 0, 0, 0.76);
+
+}
+.data{
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -62,11 +71,12 @@ input[type=text] {
     font-size: .8rem;
 }
 .forgotPassword{
-    color: white;
+    color: palevioletred!important;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: 1rem;
 
 }
+.
 .submitButton {
     width: 100%;
     padding: 18px 10px;
