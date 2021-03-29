@@ -1,26 +1,22 @@
-.custom-button{
-    min-width: 150px;
+.custom-button {
+    min-width: 165px;
     width: auto;
     height: 50px;
     letter-spacing: 0.5px;
+    line-height: 50px;
     padding: 0 35px 0 35px;
-    font-size: 1.2rem;
-    border: 1px solid black;
+    font-size: 15px;
+    background-color: white;
     color: black;
-    font-weight: bold;
-    font: inherit;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: none;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border-radius: 5px;
-    
-}
 
+}
 .custom-button:hover{
-    background: black;  
-    color: white;  
+    background: palevioletred;
+    color: white;
 }
 
 .filteredbtn{

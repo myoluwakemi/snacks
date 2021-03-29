@@ -1,7 +1,8 @@
 import React, {useState} from "react";
-import "./login.css"
+import "./login.scss"
 import FormInput from "../../components/FormInput";
 import {Link} from 'react-router-dom'
+import CustomButton from "../../components/custom-button/custom-button";
 
 
 
@@ -25,7 +26,7 @@ const Login = () => {
            <div className='cardd'>
                <h1>Log in</h1>
                <form>
-                   <div className="data">
+                   <div className="data">plug
 
             <FormInput name='email' type='email' value={data.email} handleChange={handleInputChange} label="Email"/>
 
@@ -47,7 +48,9 @@ const Login = () => {
                                </Link>
                            </div>
                        </div>
+                       <CustomButton type="submit">LOGIN</CustomButton>
                    </div>
+
 
 
                </form>

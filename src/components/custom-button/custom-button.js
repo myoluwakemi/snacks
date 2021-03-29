@@ -1,5 +1,5 @@
 import React from 'react';
-import '../custom-button/custom-button.css'
+import './custom-button.scss'
 
 
 
