@@ -4,19 +4,18 @@ import {faFacebook, faInstagram, faTwitter} from '@fortawesome/free-brands-svg-i
 import './TopHeader.css'
 
 
-
-const TopHeader = () =>{
-    return(
+const TopHeader = () => {
+    return (
         <div className="topHeader pad">
             <div className="phoneNum">
-            <span>038387647</span>
+                <span>038387647</span>
             </div>
             <div className="social_icon">
                 <ul className="social_icons">
                     <li className="icon">
-                    <a href="http://instagram.com">
-                        <FontAwesomeIcon icon={faInstagram}/>
-                    </a>
+                        <a target="_blank" rel="noopener noreferrer" href="http://instagram.com">
+                            <FontAwesomeIcon icon={faInstagram}/>
+                        </a>
                     </li>
                     <li className="icon">
                         <a href="http://facebook.com"><FontAwesomeIcon icon={faFacebook}/></a>
@@ -27,7 +26,6 @@ const TopHeader = () =>{
 
                 </ul>
             </div>
-
 
 
         </div>
